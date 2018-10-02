@@ -1,8 +1,8 @@
 <h5># WebCrawling</h5>
-<pre>
 <h2><b>Web crawling with R and Python</b></h2>
-<b><u>Specify a keyword</u></b>
+<b>Specify a keyword</b>
 
+<pre>
 How to scrap data from the web?
 If you look for 'web crawling' on any search engines,
 you will get the information about various tools.
