@@ -16,7 +16,8 @@ I am going to explore the domain to find the answer.
 
 References:
 [1] Rcrawler: https://github.com/salimk/Rcrawler#how-to-cite-rcrawler
-Khalil, S., & Fakir, M. (2017). RCrawler: An R package for parallel web crawling and scraping. SoftwareX, 6, 98-106.
+Khalil, S., & Fakir, M. (2017).
+RCrawler: An R package for parallel web crawling and scraping. SoftwareX, 6, 98-106.
 [2] Scrapy: https://scrapy.org/
 [3] beautifulsoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 </pre>
@@ -36,7 +37,7 @@ There are plenty of information about the installation on the web, so you can fi
 <pre>
 Now let's choose the keyword to collect the information about.
 I select this one:
-<b>mars</b>
+<b>mars travel</b>
 </pre>
 
 <b><h4 id="rcrawler">1. Web crawling with R - Rcrawler</h4></b>
