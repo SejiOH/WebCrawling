@@ -19,17 +19,27 @@ References:
 Khalil, S., & Fakir, M. (2017). RCrawler: An R package for parallel web crawling and scraping. SoftwareX, 6, 98-106.
 [2] Scrapy: https://scrapy.org/
 [3] beautifulsoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+</pre>
 
 <a href="#rcrawler">1. Web crawling with R - Rcrawler</a>
 <a href="python">2. Web crawling with python - beautifulsoup and scrapy</a>
 
+<pre>
 <b><u>CODE</b></u>
 As I mentioned above, there are various tools for web crawling.
 Here we are going to deal three tools - scrapy, beautifulsoup and Rcrawler.
 
-And whatever you use, it is not avoidable to install <u>JAVA</u>.
+And whatever you use, it is not avoidable to install <b>JAVA</b>.
+There are plenty of information about the installation on the web, so you can find easily.
+</pre>
 
-<b><u><h4 id="rcrawler">1. Web crawling with R - Rcrawler</h4></u></b>
+<pre>
+Now let's choose the keyword to collect the information about.
+I select this one:
+<b>mars</b>
+</pre>
+
+<b><h4 id="rcrawler">1. Web crawling with R - Rcrawler</h4></b>
 
 
 
