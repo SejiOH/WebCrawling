@@ -1,5 +1,5 @@
 <h5># WebCrawling</h5>
-<h2><b> A Keyword Specification Web crawling with R and Python</b></h2>
+<h2><b> A Keyword Specification Web Crawling with R and Python</b></h2>
 
 <pre>
 How to gather the data from the web?
@@ -31,18 +31,17 @@ Here we are going to deal data with three tools:
 And whatever you use, it is not avoidable to install <b>JAVA</b>.
 There are plenty of information about the installation which you can find easily on the internet.
 So I will not handle the object here.
-
 </pre>
 
 <pre>
 Now let's choose the keyword to collect the information about.
-I select this one:
-<b>mars travel</b>
-</pre>
+I select this one: <h4><b>mars travel</b></h4>
+There is no special reason to pick the topic but only curiosity.
 
-<pre>
+Then we need to choose a website where we get the information.
 As you guess there are tons of information on the web so we need to pick a certain website.
-Then I decide to scrap webpages from the British news company BBC (https://www.bbc.com).
+Then I decide to scrap webpages from the British news company <h4><b>BBC (https://www.bbc.com)</h4></b>.
+(You can choose anything and any websites whatever you want.)
 </pre>
 
 <b><u>CODE</b></u>
