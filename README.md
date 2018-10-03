@@ -1,6 +1,5 @@
 <h5># WebCrawling</h5>
-<h2><b>Web crawling with R and Python</b></h2>
-<b>Specify a keyword</b>
+<h2><b>Web crawling with R and Pythonwith a keyword specification</b></h2>
 
 <pre>
 How to gather the data from the web?
