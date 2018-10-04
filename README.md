@@ -18,8 +18,7 @@ Khalil, S., & Fakir, M. (2017).
 RCrawler: An R package for parallel web crawling and scraping. SoftwareX, 6, 98-106.
 [2] Scrapy: https://scrapy.org/
 [3] beautifulsoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-</pre>
-<pre>
+
 As I mentioned above, there are various tools for web crawling.
 Here we are going to deal data with three tools:
 <a href="#scrapy">1. Scrapy with python</a>
@@ -29,8 +28,7 @@ Here we are going to deal data with three tools:
 And whatever you use, it is not avoidable to install <b>JAVA</b>.
 There are plenty of information about the installation which you can find easily on the internet.
 So I will not handle the object here.
-</pre>
-<pre>
+
 Now let's choose the keyword to collect the information about.
 I select this one: <b>mars travel</b>
 There is no special reason to pick the topic but only curiosity.
@@ -43,8 +41,7 @@ Then I decide to scrap webpages from the British news company <b>BBC (https://ww
 The website offers an in-site search:
 https://www.bbc.co.uk/search?q=mars+travel
 We start from here.
-</pre>
-<pre>
+
 <b><u>CODE</b></u>
 <b><h4 id="scrapy">1. Scrapy with python</h4></b>
 
@@ -52,36 +49,27 @@ We start from here.
 
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R like the other tools.
-<pre><code>
+<code>
 download.file("https://www.bbc.co.uk/search?q=mars+travel", "bbc_search_result.html")
-</pre></code>
+</code>
 To download more pages, we need write a for loop.
-<pre><code>
-
-
-</pre></code>
-
-<pre><code>
+<code></code>
+<code>
 Rcrawler(Website="https://www.bbc.com",
 KeywordsFilter = c("mars", "travel"),
 KeywordsAccuracy = 50,
 no_cores=4, no_conn=4)
-</pre></code>
-
-<pre><code>
+</code>
+<code>
 Rcrawler(Website="https://www.bbc.com",
 KeywordsFilter = c("mars", "travel"),
 KeywordsAccuracy = 50,
 NetworkData = TRUE, NetwExtLinks =TRUE,
 statslinks = TRUE,
 no_cores=4, no_conn=4)
-</pre></code>
-
-<pre><code></pre></code>
-
-
-</pre>
-<pre>
+</code>
+<code></code>
+<code></code>
 <b><u>Citation Request</b></u>
 If you use anything obtained from this repository, then, in your acknowledgements,
 please note the assistance you received by using this repository.
