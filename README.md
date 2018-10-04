@@ -35,12 +35,12 @@ So I will not handle the object here.
 
 <pre>
 Now let's choose the keyword to collect the information about.
-I select this one: <h4><b>mars travel</b></h4>
+I select this one: <b>mars travel</b>
 There is no special reason to pick the topic but only curiosity.
 
 Then we need to choose a website where we get the information.
 As you guess there are tons of information on the web so we need to pick a certain website.
-Then I decide to scrap webpages from the British news company <h4><b>BBC (https://www.bbc.com)</h4></b>.
+Then I decide to scrap webpages from the British news company<b>BBC (https://www.bbc.com)</b>.
 (You can choose anything and any websites whatever you want.)
 </pre>
 
