@@ -1,6 +1,6 @@
 <h5># WebCrawling</h5>
 <h2><b> A Keyword Specification Web Crawling with R and Python</b></h2>
-<pre>
+
 How to gather the data from the web?
 If you look for 'web crawling' on any search engines,
 you will get the information about various tools.
@@ -49,29 +49,29 @@ We start from here.
 
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R like the other tools.
-<code>
+<pre><code>
 download.file("https://www.bbc.co.uk/search?q=mars+travel", "bbc_search_result.html")
-</code>
+</code></pre>
 To download more pages, we need write a for loop.
-<code></code>
-<code>
+<pre><code></code></pre>
+<pre><code>
 Rcrawler(Website="https://www.bbc.com",
 KeywordsFilter = c("mars", "travel"),
 KeywordsAccuracy = 50,
 no_cores=4, no_conn=4)
-</code>
-<code>
+</code></pre>
+<pre><code>
 Rcrawler(Website="https://www.bbc.com",
 KeywordsFilter = c("mars", "travel"),
 KeywordsAccuracy = 50,
 NetworkData = TRUE, NetwExtLinks =TRUE,
 statslinks = TRUE,
 no_cores=4, no_conn=4)
-</code>
-<code></code>
-<code></code>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
 <b><u>Citation Request</b></u>
 If you use anything obtained from this repository, then, in your acknowledgements,
 please note the assistance you received by using this repository.
 Thank you.
-</pre>
+
