@@ -40,20 +40,29 @@ There is no special reason to pick the topic but only curiosity.
 
 Then we need to choose a website where we get the information.
 As you guess there are tons of information on the web so we need to pick a certain website.
-Then I decide to scrap webpages from the British news company<b>BBC (https://www.bbc.com)</b>.
+Then I decide to scrap webpages from the British news company <b>BBC (https://www.bbc.com)</b>.
 (You can choose anything and any websites whatever you want.)
+
+The website offers an in-site search:
+https://www.bbc.co.uk/search?q=mars+travel
+We start from here.
 </pre>
 
+<pre>
 <b><u>CODE</b></u>
 <b><h4 id="scrapy">1. Scrapy with python</h4></b>
-<b><h4 id="beautifulsoup">2. Python package -  beautifulsoup</h4></b>
-<b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 
+<b><h4 id="beautifulsoup">2. Python package -  beautifulsoup</h4></b>
+
+<b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
+There is a simple way to download webpages directly with R like the other tools.
+
+
+</pre>
+
+<pre>
 <b><u>Citation Request</b></u>
 If you use anything obtained from this repository, then, in your acknowledgements,
 please note the assistance you received by using this repository.
 Thank you.
-
 </pre>
-
-So I wil
