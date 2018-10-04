@@ -71,10 +71,9 @@ no_cores=4, no_conn=4)
 <pre><code></code></pre>
 <pre><code></code></pre>
 
-<pre>
+
 <b>Citation Request</b>
 If you use anything obtained from this repository, then, in your acknowledgements,
 please note the assistance you received by using this repository.
 Thank you.
-</pre>
 
