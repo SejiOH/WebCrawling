@@ -1,6 +1,6 @@
 <h5># WebCrawling</h5>
 <h2><b> A Keyword Specification Web Crawling with R and Python</b></h2>
-
+<pre>
 How to gather the data from the web?
 If you look for 'web crawling' on any search engines,
 you will get the information about various tools.
@@ -41,7 +41,7 @@ Then I decide to scrap webpages from the British news company <b>BBC (https://ww
 The website offers an in-site search:
 https://www.bbc.co.uk/search?q=mars+travel
 We start from here.
-
+</pre>
 <b><u>CODE</b></u>
 <b><h4 id="scrapy">1. Scrapy with python</h4></b>
 
@@ -70,8 +70,10 @@ no_cores=4, no_conn=4)
 <pre><code></code></pre>
 <pre><code></code></pre>
 <pre><code></code></pre>
+<pre>
 <b><u>Citation Request</b></u>
 If you use anything obtained from this repository, then, in your acknowledgements,
 please note the assistance you received by using this repository.
 Thank you.
+</pre>
 
