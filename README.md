@@ -41,7 +41,7 @@ Then I decide to scrap webpages from the British news company <b>BBC (https://ww
 The website offers an in-site search:
 https://www.bbc.co.uk/search?q=mars+travel
 We will start from here.
-</pre>
+
 <b><u>CODE</b></u>
 <b><h4 id="scrapy">1. Scrapy with python</h4></b>
 <pre><code></code></pre>
@@ -52,7 +52,7 @@ We will start from here.
 <pre><code></code></pre>
 <pre><code></code></pre>
 <pre><code></code></pre>
-<pre>
+
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R.
 <pre><code>
@@ -92,7 +92,7 @@ statslinks = TRUE,
 no_cores=4, no_conn=4)
 </code></pre>
 </pre>
-<pre>
+
 Next step to data analysis will be continued.
 
 <b>Citation Request</b><br>
