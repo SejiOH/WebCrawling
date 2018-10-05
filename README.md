@@ -91,7 +91,6 @@ NetworkData = TRUE, NetwExtLinks =TRUE,
 statslinks = TRUE,
 no_cores=4, no_conn=4)
 </code></pre>
-</pre>
 
 Next step to data analysis will be continued.
 
