@@ -52,7 +52,7 @@ We will start from here.
 <pre><code></code></pre>
 <pre><code></code></pre>
 <pre><code></code></pre>
-
+<pre>
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R.
 <pre><code>
@@ -91,6 +91,7 @@ NetworkData = TRUE, NetwExtLinks =TRUE,
 statslinks = TRUE,
 no_cores=4, no_conn=4)
 </code></pre>
+</pre>
 <pre>
 Next step to data analysis will be continued.
 
