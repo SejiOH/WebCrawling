@@ -48,10 +48,35 @@ We will start from here.
 <pre><code></code></pre>
 <pre><code></code></pre>
 
-<b><h4 id="beautifulsoup">2. Python package -  beautifulsoup</h4></b>
-<pre><code></code></pre>
-<pre><code></code></pre>
-<pre><code></code></pre>
+<b><h4 id="beautifulsoup">2. Python package -  BeautifulSoup</h4></b>
+This package BeautifulSoup is a useful when we read web pages.
+
+<pre><code>
+url = "https://www.bbc.co.uk/search?q=mars+travel"
+</code></pre>
+<pre><code>
+html_doc = urllib.request.urlopen(url)
+</code></pre>
+<pre><code>
+soup = BeautifulSoup(html_doc, 'html.parser')
+print(soup.prettify())
+</code></pre>
+<pre><code>
+soup = BeautifulSoup(html_doc, 'html.parser')
+print(soup.prettify())
+</code></pre>
+<pre><code>
+soup.find_all('a')
+
+websites_list = []
+
+for link in soup.find_all('a'):
+    # print(link.get('href'))
+    links = link.get('href')
+    websites_list.append(links)
+    
+print(websites_list)
+</code></pre>
 
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R.
