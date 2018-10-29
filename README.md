@@ -31,7 +31,7 @@ So I will not handle the object here.
 
 Now let's choose the keyword to collect the information about.
 I select this one: <b>Mars travel</b>
-(There is no special reason to pick the topic but only curiosity.)
+(There is no special reason to pick the topic but only the curiosity.)
 
 Then we need to choose a website where we get the information.
 As you guess there are tons of information on the web so we need to pick a certain website.
@@ -49,34 +49,87 @@ We will start from here.
 <pre><code></code></pre>
 
 <b><h4 id="beautifulsoup">2. Python package -  BeautifulSoup</h4></b>
-This package BeautifulSoup is a useful when we read web pages.
-
+This package BeautifulSoup is a useful when we read web pages.<br>
+Let's import libraries to use.
+<pre><code>
+from bs4 import BeautifulSoup
+import urllib.request
+</code></pre>
+Then we address the web page as 'url', open it, and read it.
 <pre><code>
 url = "https://www.bbc.co.uk/search?q=mars+travel"
-</code></pre>
-<pre><code>
 html_doc = urllib.request.urlopen(url)
+soup.BeautifulSoup(html_doc, 'html.parser')
 </code></pre>
+We can print the content on IPython console.
 <pre><code>
-soup = BeautifulSoup(html_doc, 'html.parser')
 print(soup.prettify())
 </code></pre>
-<pre><code>
-soup = BeautifulSoup(html_doc, 'html.parser')
-print(soup.prettify())
-</code></pre>
+This output shows the search results briefly, however we need full contents for each article.<br>
+So let's extract links only from the output then tidy it.
 <pre><code>
 soup.find_all('a')
-
 websites_list = []
-
-for link in soup.find_all('a'):
-    # print(link.get('href'))
+for link in soup.find_all('a'):    
     links = link.get('href')
     websites_list.append(links)
-    
-print(websites_list)
+websites_list
+len(websites_list)
+websites_list = websites_list[36:66]
+websites_list
 </code></pre>
+Let's inspect the first webpage in the list and save it into the file.<br>
+Since the content is written in the form of bytes, we need to encode a data from binary to string.
+<pre><code>
+url = websites_list[0]
+html_doc = urllib.request.urlopen(url)
+soup = BeautifulSoup(html_doc, 'html.parser')
+result = soup.prettify().encode('utf-8')
+
+import base64
+result_b64 = base64.b64encode(result)
+result_decode_b64 = base64.b64decode(result_b64)
+with open("bbc_mars_travel.html", "xb") as outfile:
+    outfile.write(result_decode_b64)
+outfile.close()
+</code></pre>
+Then we can save each content with 'for' loop.
+<pre><code>
+for i in range(len(websites_list)):
+    with open("bbc_mars_travel_%s.html"%(i), "xb") as outfile:
+        url = websites_list[i]
+        html_doc = urllib.request.urlopen(url)   
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        result = soup.prettify().encode('utf-8')
+        result_b64 = base64.b64encode(result)
+        result_decode_b64 = base64.b64decode(result_b64)
+        outfile.write(result_decode_b64)
+    outfile.close()    
+</code></pre>
+The contents have been saved into bbc_mars_travel.html and bbc_mars_travel_[i].html<br>
+(You can find the files in bbc_mars_travel.zip.)<br>
+Now we need to clean the data precisely from each file for the analysis.<br>
+This step will be conducted after we collect the data with R.<br>
+
+Mostly, multiple pages are needed to collect.<br>
+In that case:
+<pre><code>
+urls = []
+websites_list = []
+for i in range(2,11):
+    i = str(i)
+    url = "https://www.bbc.co.uk/search?q=mars+travel#page="+i
+    # print(url)    
+    urls.append(url)
+    # print(urls)
+    for url in urls:
+        html_doc = urllib.request.urlopen(url)
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        for link in soup.find_all('a'):
+            links = link.get('href')
+            websites_list.append(links)
+</pre></code>
+
 
 <b><h4 id="rcrawler">3. R library - Rcrawler</h4></b>
 There is a simple way to download webpages directly with R.
