@@ -18,6 +18,7 @@ Khalil, S., & Fakir, M. (2017).
 RCrawler: An R package for parallel web crawling and scraping. SoftwareX, 6, 98-106.
 [2] Scrapy: https://scrapy.org/
 [3] beautifulsoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+[4] binary to string: https://stackoverflow.com/questions/5512811/builtins-typeerror-must-be-str-not-bytes
 
 As I mentioned above, there are various tools for web crawling.
 Here we are going to deal data with three tools:
